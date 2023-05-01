@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Print data in Table</title>
+</head>
+
+<body>
+    <table border="1px solid black">
+        <thead>
+            <tr>
+                <th>fullname</th>
+                <th>username</th>
+                <th>email</th>
+                <th>password</th>
+                <th>Phone number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let i=0; i < data.users.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= data.users[i].fullname %>
+                    </td>
+                    <td>
+                        <%= data.users[i].username %>
+                    </td>
+                    <td>
+                        <%= data.users[i].email %>
+                    </td>
+                    <td>
+                        <%= data.users[i].password %>
+                    </td>
+                    <td>
+                        <%= data.users[i].phoneNumber %>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
